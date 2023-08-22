@@ -10,7 +10,21 @@ const users = [
 ];
 
 function main() {
-
+    const root = document.getElementById("root");
+    const h1 = root.createElement("h1");
+    h1.innerText = "FREELANCERS";
+    root.appendChild(h1);
+    const ul = root.createElement("ul");
+    //each name is the heading of a new unordered list with their age and occupation
+    /*
+    <ul>
+        <li>users.name is users.age and works as a users.occupation.</li>
+            
+    </ul>
+    */
+    for (i=0; i<users.length; i++){
+        let name = ul.createElement("li");
+    }
 }
 
 //call the main function
