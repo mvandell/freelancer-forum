@@ -23,8 +23,11 @@ function main() {
     </ul>
     */
     for (i=0; i<users.length; i++){
-        let name = ul.createElement("li");
+        let li = root.createElement("li");
+        li.innerText = `${users[i].name} is ${users[i].age} and works as a ${users[i].occupation}.`
+        ul.appendChild(li);
     }
+    root.appendChild(ul);
 }
 
 //call the main function
