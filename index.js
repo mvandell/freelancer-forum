@@ -8,13 +8,12 @@ const users = [
     { name: "Adam", age: 47, occupation: "teacher" },
     { name: "Robert", age: 72, occupation: "driver" },
 ];
-
-function main() {
+function main() {  
     const root = document.getElementById("root");
-    const h1 = root.createElement("h1");
+    const h1 = document.createElement("h1");
     h1.innerText = "FREELANCERS";
     root.appendChild(h1);
-    const ul = root.createElement("ul");
+    const ul = document.createElement("ul");
     //each name is the heading of a new unordered list with their age and occupation
     /*
     <ul>
@@ -23,7 +22,7 @@ function main() {
     </ul>
     */
     for (i=0; i<users.length; i++){
-        let li = root.createElement("li");
+        let li = document.createElement("li");
         li.innerText = `${users[i].name} is ${users[i].age} and works as a ${users[i].occupation}.`
         ul.appendChild(li);
     }
