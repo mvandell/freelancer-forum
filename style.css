@@ -1,0 +1,20 @@
+body {
+    background-color: #A0D2DB;
+}
+
+div {
+    background-color: #C490D1;
+    width: 450px;
+    height: 350px;
+    padding-top: 2px;
+    padding-left: 30px;
+}
+
+li {
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family:'Segoe Script', cursive;
+}
